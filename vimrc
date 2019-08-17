@@ -129,7 +129,7 @@ augroup go
   autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
   " :GoBuild and :GoTestCompile
-  autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+  autocmd FileType go nmap <leader>b <Plug>(go-build)
 
   " :GoTest
   autocmd FileType go nmap <leader>t  <Plug>(go-test)
